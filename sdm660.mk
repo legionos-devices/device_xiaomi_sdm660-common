@@ -157,7 +157,7 @@ PRODUCT_BOOT_JARS += \
 # Camera
 PRODUCT_PACKAGES += \
     libMiWatermark_shim \
-    Snap
+    MiuiCamera
 
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
@@ -399,6 +399,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     ims-ext-common_system \
     telephony-ext
+
+# Moar Ril packages
+PRODUCT_PACKAGES += \
+    qti-telephony-hidl-wrapper \
+    qti-telephony-hidl-wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
